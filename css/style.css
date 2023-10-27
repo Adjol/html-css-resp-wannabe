@@ -128,10 +128,27 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+
+
+
 /* tablet version */
  @media all and ( max-width: 768px ) {
    
     .container {
-        max-width: 100vw;
+        width: 100vw;
     }
  }
+
+ /* small screen  */
+
+ @media all and ( max-width:480px) {
+    .row {
+        display: block;
+    }
+ 
+    .col {
+        margin: 0 auto;
+        padding: 0;
+    }
+ }
+
