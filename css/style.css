@@ -128,9 +128,6 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-
-
-
 /* tablet version */
  @media all and ( max-width: 768px ) {
    
@@ -145,10 +142,29 @@ img {
     .row {
         display: block;
     }
- 
+
     .col {
         margin: 0 auto;
-        padding: 0;
+        width: 100%;
     }
+
+    /* columns full screen in mobile version */
+    .lessons .col {
+        width: 100%;
+    }
+    .steps .col { width: 100%;}
+
+    .why-us .col-right { width: 100%;}
+ 
+
  }
 
+ /* x axis overflow removal between tablet to fullscreen desktop */
+
+ @media all and (min-width: 768px) and (max-width: 1160px){
+   
+    .container {
+        width: 100vw;
+    }
+
+ }
